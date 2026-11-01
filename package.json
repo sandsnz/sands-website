@@ -1,5 +1,5 @@
 {
-  "name": "sands-nz-preview-deployment",
+  "name": "website-preview-deployment",
   "private": true,
   "scripts": {
     "dev": "wrangler dev",
