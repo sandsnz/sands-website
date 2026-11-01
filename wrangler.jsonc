@@ -1,0 +1,10 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "sands-nz-preview",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./products/national/v1-build",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  }
+}
