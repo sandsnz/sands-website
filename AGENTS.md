@@ -3,10 +3,20 @@
 ## Required change workflow
 
 - Before changing any file in this repository, present a concise implementation plan to the user.
-- Do not modify repository files until the user authorizes that plan by replying with the exact gateway word `Execute`.
-- Treat discussion, approval in other words, or requests to revise the plan as insufficient authorization to edit files.
+- Do not modify repository files until the user directly authorizes the proposed plan with an approval phrase.
+- Accept `Execute`, `Go`, and `Do it` as approval aliases. Match them case-insensitively and ignore surrounding whitespace or punctuation; exact spelling, capitalization, and punctuation are not required when the user's authorization intent is clear.
+- Do not treat an incidental mention of an alias, general discussion, or a request to revise the plan as authorization to edit files.
 - After an authorized change is complete, verify the work in proportion to its risk, commit all and only the completed change, and push the commit directly to `origin/main`.
 - Report the verification performed, the commit hash, and the push result.
+
+## Installed development and deployment tools
+
+- GitHub CLI `2.103.3` is installed system-wide and available as `gh`.
+- Node.js LTS `26.13.0` is installed system-wide and available as `node`.
+- npm and npx `11.20.0` are installed system-wide and available as `npm` and `npx`.
+- Python `3.14.10` is installed for the current Windows user and available as `python` or `py` in new terminal sessions.
+- pip `26.2.2` is installed with Python and available as `pip` or `python -m pip`.
+- Wrangler `4.156.0` is pinned as a repository-local development dependency. Invoke it with `npx wrangler` or the scripts in `package.json`; do not depend on a global Wrangler installation.
 
 ## GitHub authentication on this Windows host
 
